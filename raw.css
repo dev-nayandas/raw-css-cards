@@ -7,10 +7,10 @@
 
 body {
   background-color: #5f6368;
+  max-width: 1140px;
 }
 
 .card-container {
-  width: 80%;
   margin-top: 100px;
   overflow: hidden;
 }
@@ -57,14 +57,14 @@ body {
   margin-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .card {
-    width: 45%;
+    width: 100%;
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 576px) and (max-width: 992px) {
   .card {
-    width: 100%;
+    width: calc(50% - 20px);
   }
 }
